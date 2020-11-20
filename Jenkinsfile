@@ -34,7 +34,7 @@ pipeline {
 
         stage('Docker build for next (unstable) branch'){
             when{
-                branch 'next'
+                branch 'synapse-skill'
             }
             steps {
                 echo 'Publishing unstable'
