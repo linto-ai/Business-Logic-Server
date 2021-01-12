@@ -25,3 +25,4 @@ docs
 !packages/node_modules/**/docs
 **/package-lock.json
 **/.env
+catalogues/catalogues.json

@@ -11,6 +11,10 @@ install_by_node_registry(){
   install_linto_node_module
 }
 
+set_node_registry(){
+  npm set registry $1
+}
+
 [ -z "$LINTO_STACK_DOMAIN" ] && {
     echo "Missing LINTO_STACK_DOMAIN"
     exit 1
@@ -19,16 +23,20 @@ install_by_node_registry(){
     echo "Missing LINTO_STACK_BLS_SERVICE_UI_PATH"
     exit 1
 }
-[ -z "$LINTO_STACK_BLS_SERVICE_API_PATH" ] && {
-    echo "Missing LINTO_STACK_BLS_SERVICE_API_PATH"
-    exit 1
-}
+
 
 
 while [ "$1" != "" ]; do
     case $1 in
     --default-registry-npmrc)
          install_by_node_registry https://registry.npmjs.com/
+        ;;
+    --set-custom-registry-npmrc)
+          [ -z "$LINTO_STACK_NPM_CUSTOM_REGISTRY" ] && {
+            echo "Missing LINTO_STACK_NPM_CUSTOM_REGISTRY"
+            exit 1
+          }
+          set_node_registry $LINTO_STACK_NPM_CUSTOM_REGISTRY
         ;;
     --custom-registry-npmrc)
           [ -z "$LINTO_STACK_NPM_CUSTOM_REGISTRY" ] && {

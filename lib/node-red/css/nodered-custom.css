@@ -1,59 +1,147 @@
-/* Hide inactive Tabs */
-.red-ui-tabs ul li{
-  display: none;
+/*** HIDE ELEMENTS ***/
+
+
+/* Deploy */
+
+.red-ui-deploy-button-group {
+    display: none !important;
 }
-/* show active Tabs */
-.red-ui-tabs ul li.active{
-  display: inline-block;
+
+
+/* Sidebar (right) */
+
+
+/*#red-ui-sidebar,
+#red-ui-sidebar-separator {
+    display: none !important;
+}*/
+
+.red-ui-sidebar-info.show-tips .red-ui-sidebar-info-stack {
+    display: none !important;
 }
+
+
+/* Tabs */
+
+.red-ui-tabs.red-ui-tabs-add.red-ui-tabs-search .red-ui-tab-scroll-right {
+    display: none !important;
+}
+
+.red-ui-tabs.red-ui-tabs-add.red-ui-tabs-search.red-ui-tabs-scrollable {
+    padding-right: 0px !important;
+}
+
+#red-ui-workspace-tabs {
+    width: 100%;
+}
+
+.red-ui-tabs ul#red-ui-workspace-tabs li {
+    display: none !important;
+}
+
+.red-ui-tabs ul#red-ui-workspace-tabs li.active {
+    display: inline-block !important;
+}
+
+
+/* Button add tabs */
+
+.red-ui-tab-button.red-ui-tabs-add {
+    display: none !important;
+}
+
+
+/* user menu */
+
+#red-ui-header-button-user {
+    display: none !important;
+}
+
+
+/*list palette */
+
+.red-ui-tab-button.red-ui-tabs-search {
+    display: none !important;
+}
+
+
+/*** END HIDE ELEMENTS ***/
+
+
+/*** STYLE ELEMENTS ***/
+
 #red-ui-header {
-  background-color: #6989aa;
+    background-color: #6989aa;
 }
-#red-ui-header span.red-ui-header-logo span{
-  color: #fff;
-  font-weight: 600;
+
+#red-ui-header span.red-ui-header-logo span {
+    color: #fff;
+    font-weight: 600;
 }
+
+
 /* Sidemenu buttons */
-#red-ui-header .button{
-  border-color: #434C5F;
-  color: #fff;
+
+#red-ui-header .button {
+    border-color: #434C5F;
+    color: #fff;
 }
-#red-ui-header-button-sidemenu.button{
-  color: #fff;
+
+#red-ui-header-button-sidemenu.button {
+    color: #fff;
 }
-#red-ui-header-button-sidemenu.button:hover{
-  color: #45baeb;
+
+#red-ui-header-button-sidemenu.button:hover {
+    color: #45baeb;
 }
+
 #red-ui-header .button:hover,
-#red-ui-header .button:focus{
-  background-color: #434C5F;
-  border-color: #434C5F;
+#red-ui-header .button:focus {
+    background-color: #434C5F;
+    border-color: #434C5F;
 }
+
 
 /* Submenu */
+
 #red-ui-header ul.red-ui-menu-dropdown {
-  border-color: #434C5F;
-  background-color: #434C5F;
+    border-color: #434C5F;
+    background-color: #434C5F;
 }
+
 
 /* Submenu divider */
+
 #red-ui-header ul.red-ui-menu-dropdown li.red-ui-menu-divider {
-  background-color: #6989aa;
+    background-color: #6989aa;
 }
+
 
 /* Submenu hover */
-#red-ui-header ul.red-ui-menu-dropdown>li>a:hover, #red-ui-header ul.red-ui-menu-dropdown>li>a:focus, #red-ui-header ul.red-ui-menu-dropdown>li:hover>a, #red-ui-header ul.red-ui-menu-dropdown>li:focus>a{
-  background-color:#45baeb !important;
-  color: #fff;
+
+#red-ui-header ul.red-ui-menu-dropdown>li>a:hover,
+#red-ui-header ul.red-ui-menu-dropdown>li>a:focus,
+#red-ui-header ul.red-ui-menu-dropdown>li:hover>a,
+#red-ui-header ul.red-ui-menu-dropdown>li:focus>a {
+    background-color: #45baeb !important;
+    color: #fff;
 }
+
 
 /* Deploy button */
+
+#red-ui-header .button-group.red-ui-deploy-button-group {
+    display: none;
+}
+
 #red-ui-header ul#red-ui-header-button-deploy-options-submenu li a:hover .red-ui-menu-sublabel {
-  color: #fff;
+    color: #fff;
 }
 
 
-/*** EDITOR CONFIG ***/
-.red-ui-editor .form-row, .red-ui-editor-dialog .form-row{
-  height: auto;
+/*** EDITOR CONFIG **/
+
+.red-ui-editor .form-row,
+.red-ui-editor-dialog .form-row {
+    height: auto;
 }
