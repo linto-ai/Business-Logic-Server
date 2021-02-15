@@ -1,3 +1,8 @@
+# 1.1.1
+- Update node-red version
+- Add api route for install zip or tar module
+- Disable catalogue feature
+
 # 1.1.0
 - Add custom node-red script and css
 - Environement variable harmonization
