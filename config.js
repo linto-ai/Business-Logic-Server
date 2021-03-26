@@ -28,7 +28,7 @@ function configureDefaults() {
     process.env.LINTO_STACK_BLS_USE_LOGIN = ifHas(process.env.LINTO_STACK_BLS_USE_LOGIN, envdefault.LINTO_STACK_BLS_USE_LOGIN)
     process.env.LINTO_STACK_BLS_USER = ifHas(process.env.LINTO_STACK_BLS_USER, envdefault.LINTO_STACK_BLS_USER)
     process.env.LINTO_STACK_BLS_PASSWORD = ifHas(process.env.LINTO_STACK_BLS_PASSWORD, envdefault.LINTO_STACK_BLS_PASSWORD)
-    process.env.LINTO_STACK_BLS_API_MAX_LENGTH =ifHas(process.env.LINTO_STACK_BLS_API_MAX_LENGTH, envdefault.LINTO_STACK_BLS_API_MAX_LENGTH)
+    process.env.LINTO_STACK_BLS_API_MAX_LENGTH = ifHas(process.env.LINTO_STACK_BLS_API_MAX_LENGTH, envdefault.LINTO_STACK_BLS_API_MAX_LENGTH)
 
     // STT properties
     process.env.LINTO_STACK_STT_SERVICE_MANAGER_SERVICE = ifHas(process.env.LINTO_STACK_STT_SERVICE_MANAGER_SERVICE, envdefault.LINTO_STACK_STT_SERVICE_MANAGER_SERVICE)
@@ -38,6 +38,11 @@ function configureDefaults() {
     // Overwatch properties
     process.env.LINTO_STACK_OVERWATCH_SERVICE = ifHas(process.env.LINTO_STACK_OVERWATCH_SERVICE, envdefault.LINTO_STACK_OVERWATCH_SERVICE)
     process.env.LINTO_STACK_OVERWATCH_BASE_PATH = ifHas(process.env.LINTO_STACK_OVERWATCH_BASE_PATH, envdefault.LINTO_STACK_OVERWATCH_BASE_PATH)
+
+    // TOCK properties
+    process.env.LINTO_STACK_TOCK_BOT_API = ifHas(process.env.LINTO_STACK_TOCK_BOT_API, envdefault.LINTO_STACK_TOCK_BOT_API)
+    process.env.LINTO_STACK_TOCK_SERVICE = ifHas(process.env.LINTO_STACK_TOCK_SERVICE, envdefault.LINTO_STACK_TOCK_SERVICE)
+    process.env.LINTO_STACK_TOCK_NLP_API = ifHas(process.env.LINTO_STACK_TOCK_NLP_API, envdefault.LINTO_STACK_TOCK_NLP_API)
 
   } catch (e) {
     console.error(debug.namespace, e)
