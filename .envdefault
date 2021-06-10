@@ -18,3 +18,7 @@ LINTO_STACK_OVERWATCH_SERVICE=linto-platform-overwatch
 LINTO_STACK_OVERWATCH_BASE_PATH=/overwatch
 
 LINTO_STACK_BLS_API_MAX_LENGTH=5mb
+
+LINTO_STACK_TOCK_BOT_API=linto-tock-bot-api
+LINTO_STACK_TOCK_SERVICE=linto-tock-nlu-web
+LINTO_STACK_TOCK_NLP_API=linto-tock-nlp-api
