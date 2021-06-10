@@ -145,3 +145,40 @@
 .red-ui-editor-dialog .form-row {
     height: auto;
 }
+
+
+
+
+#confidence-helper{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    padding-top: 2px;
+    background: #333;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+  #confidence-helper:hover{
+    background-color: #ccc;
+    color: #555;
+  }
+  #confidence-helper:hover:after{
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    text-align: left;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
